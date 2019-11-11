@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login e Registo</title>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+      <link rel="stylesheet" href="css/style.css">
+	
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+</head>
+
+<body>
+		<a href="index.html"   >
+        <img  id="logoImg" src="images/logo.png">
+       
+			  </a>
+
+  
+<div class="cont">
+  <div class="form sign-in">
+    <h2>Bem vindo,</h2>
+    <label>
+      <span>Email</span>
+      <input id="user" type="email" />
+    </label>
+    <label>
+      <span>Password</span>
+      <input id="password" type="password" />
+    </label>
+    
+    <button id="loginBtn" type="button" class="submit">Login</button>
+     
+  </div>
+  <div class="sub-cont">
+    <div class="img">
+      <div class="img__text m--up">
+        <h2>Novo aqui?</h2>
+        <p>Regista-te já para começares a emprestar e requisitar livros.</p>
+      </div>
+      <div class="img__text m--in">
+        <h2>Já tens conta?</h2>
+        <p>Faz já login! </p>
+      </div>
+      <div class="img__btn">
+        <span class="m--up">Registar</span>
+        <span class="m--in">Entrar</span>
+      </div>
+    </div>
+    <div class="form sign-up" id="signupform">
+        <h2>Registo </h2>
+        <!-- Nome -->
+        <label>
+          <span>Nome</span>
+          <input id="user" type="text" required />
+        </label>
+
+        <!-- Username -->
+        <label>
+          <span>Username</span>
+          <input id="user" type="text" required/>
+        </label>
+
+        <!-- Email -->
+        <label>
+          <span>Email</span>
+          <input id="email" type="email" required/>
+        </label>
+
+        <!-- Telemovel -->
+        <label>
+          <span>Telemóvel</span>
+          <input id="telemovel" type="number"/>
+        </label>
+
+        <!-- Password -->
+        <label>
+          <span>Password</span>
+          <input id="password" type="password" />
+        </label>
+
+        <!-- Data-De-Nascimento -->
+        <label>
+          <span>Data de Nascimento</span>
+          <input type="date" id="data2">
+        </label>
+
+        <!-- Gênero -->
+        <label>
+
+          <span>Gênero</span>
+          <select name="Sexo" id="genero">
+            <option value="Default" selected>Por favor selecione uma opção</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+          </select>
+
+        </label>
+
+       
+
+    </form>
+
+    
+	  
+      <button type="button" class="submit">Registar</button>
+      
+    </div>
+  </div>
+</div>
+
+
+
+  
+  
+
+    <script  src="js/registo.js"></script>
+
+
+
+
+</body>
+
+</html>

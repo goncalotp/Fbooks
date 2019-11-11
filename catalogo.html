@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+    <title>FBook</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Bootstrap CSS link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="landing">
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <h1>
+            <strong>
+                <a href="index.html">F</a>
+            </strong>Book</h1>
+        <nav id="nav">
+            <ul>
+
+                <li>
+                    <a href="registo.html">Login/Registo</a>
+                </li>
+                <li>
+                    <a href="registodelivros.html">Registo de livros</a>
+                </li>
+                <li>
+                    <a href="catalogo.html">Catálogo</a>
+                </li>
+                <li>
+                    <a href="requisicoes.html">Requisições</a>
+                </li>
+                <li>
+                    <a class="nav-item active" href="perfil.html">Perfil</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <a href="#menu" class="navPanelToggle">
+        <span class="fa fa-bars"></span>
+    </a>
+
+    <!-- Banner -->
+    <section id="banner">
+        <h2>FBOOK</h2>
+        <p>Procura no catálogo o livro que pretendes requisitar.
+        </p>
+
+    </section>
+
+
+
+    <!-- One -->
+    <section id="one" class="wrapper style1">
+        <div class="container 100%">
+            <div class="row 200%">
+                <div class="6u 12u$(medium)">
+                    <input type="text" id="nomeLivro" placeholder="livro">
+                    <br>
+                    <input type="text" id="nomeAutor" placeholder="autor">
+                </div>
+                <div class="6u 12u$(medium)">
+                    <select>
+                        <option value="genero">Genero</option>
+                        <option value="romance">Romance</option>
+                        <option value="drama">Drama</option>
+                        <option value="thriller">Thriller</option>
+                        <option value="comedia">Comedia</option>
+                        <option value="fantasia">Fantasia</option>
+                        <option value="aventura">Aventura</option>
+                    </select>
+                    <br>
+                    <button value="Procurar">Filtrar </button>
+
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <div class="table-responsive">
+                <table id="tblGames" class="table table-sm">
+                    <tr>
+                        <th class="w-2 align-left">#</th>
+                        <th class="w-50 align-left">Nome</th>
+                        <th class="w-20 align-left">Autor</th>
+                        <th class="w-20 align-left">Genero</th>
+                        <th class="w-8 align-left">Actions</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Maze Runner</td>
+                        <td>James Dashner</td>
+                        <td>Aventura</td>
+                        <td>
+                        <!-- Requisitar o Livro -->
+                            <a>
+                                <i id="icon" class="fas fa-book" data-toggle="tooltip" title="Requisitar Livro"></i>
+                            </a>
+                            <!-- Depender do tipo de user que é , aparecem icons diferentes -->
+                            <a class="edit">
+                                <i id="icon" class="fas fa-edit"></i>
+                            </a>
+                            <!-- só irá aparecer se for admin. -->
+                            <a class="remove">
+                                <i id="icon" class="fas fa-trash-alt"></i>
+                            </a>
+
+                            <!-- Aparece sempre -->
+                            <a class="view" data-toggle="modal" data-target="#livroModal">
+                                <i id="icon" class="fas fa-eye" data-toggle="tooltip" title="Pré-Visualizar" ></i>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+
+
+
+    </section>
+
+    <!--Modal-->
+    <div class="modal fade" id="livroModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Detalhes do Livro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <label>
+                        <img id="modalGameCover" class="img-thumbnail" src="https://img.travessa.com.br/livro/BA/e5/e54d0964-a5f0-457a-a2aa-659f5633ffe8.jpg"
+                            alt="">
+                    </label>
+                    <br> Nome:
+                    <label id="nomeLivro">Maze Runner</label>
+                    <br> Autor:
+                    <label id="autorLivro">James Dashner</label>
+                    <br> Editora:
+                    <label id="editoraLivro">Editorial Presença</label>
+                    <br> Ano:
+                    <label id="anoLivro"> 2012</label>
+                    <br> Genero:
+                    <label id="generoLivro"> Aventura</label>
+                    <br> Descrição:
+                    <label id="descLivro">Correr ou Morrer</label>
+
+
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <ul class="icons">
+                <li>
+                    <a href="#" class="icon fa-facebook"></a>
+                </li>
+                <li>
+                    <a href="#" class="icon fa-twitter"></a>
+                </li>
+                <li>
+                    <a href="#" class="icon fa-instagram"></a>
+                </li>
+            </ul>
+            <br> Estudantes do Campus2 Vila do Conde/Póvoa de Varzim
+            <br> Projeto 2 - Tecnologia e Sistemas de Informação para a Web
+            <br> Gonçalo Perdigão, Pedro Ferreira e Francisco Fernandes
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

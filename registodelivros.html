@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+    <title>FBook</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+	 <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+</head>
+
+<body class="landing">
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <h1>
+            <strong>
+                <a href="index.html">F</a>
+            </strong>Book</h1>
+        <nav id="nav">
+            <ul>
+
+                <li>
+                    <a href="registo.html">Login/Registo</a>
+                </li>
+                <li>
+                    <a href="registodelivros.html">Registo de livros</a>
+                </li>
+                <li>
+                    <a href="catalogo.html">Catálogo</a>
+                </li>
+                <li>
+                    <a href="requisicoes.html">Requisições</a>
+                </li>
+                <li>
+                    <a class="nav-item active" href="perfil.html">Perfil</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <a href="#menu" class="navPanelToggle">
+        <span class="fa fa-bars"></span>
+    </a>
+
+    <!-- Banner -->
+    <section id="banner">
+        <h2>FBOOK</h2>
+        <p>Regista os teus livros na nossa base de dados.
+        </p>
+
+    </section>
+
+
+
+    <!-- One -->
+    <section id="one" class="wrapper style1">
+        <div class="container 75%">
+            <div class="row 200%">
+                <div class="6u 12u$(medium)">
+                    <label for="nomeLivro">Nome do livro</label>
+                    <input id="nomeLivro" type="text"  required >
+                    <br>
+                    <br>
+                    <label for="autorLivro">Autor</label>
+                    <input id="autorLivro" type="text" pattern="[A-Za-z]" required>
+                    <br>
+                    <br>
+                    <label for="editoraLivro">Editora</label>
+                    <input id="editoraLivro" type="text" required>
+                    <br>
+                    <br>
+                    <label for="anoLivro">Ano de lançamento</label>
+                    <input id="anoLivro"  type="number" min="1900" max="2099" step="1" value="2016" required >
+                </div>
+                <div class="6u$ 12u$(medium)">
+                    <label for="generoLivro">Genero</label>
+                    <select>
+                            <option value="romance">Romance</option>
+                            <option value="drama">Drama</option>
+                            <option value="thriller">Thriller</option>
+                            <option value="comedia">Comedia</option>
+                            <option value="fantasia">Fantasia</option>
+                            <option value="aventura">Aventura</option>
+                        </select>
+                    <br>
+                    <br>
+                    <label for="imgLivro">Link da capa</label>
+                    <input type="text" id="imgLivro" pattern="https://" placeholder="http://" required >
+                    <br>
+                    <br>
+                    <label for="descLivro">Descrição</label>
+                    <textarea id="descLivro"> </textarea>
+                    <br>
+                    <br>
+                    <button id="registarLivro" type="SUBMIT">Registar</button>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <ul class="icons">
+                <li>
+                    <a href="#" class="icon fa-facebook"></a>
+                </li>
+                <li>
+                    <a href="#" class="icon fa-twitter"></a>
+                </li>
+                <li>
+                    <a href="#" class="icon fa-instagram"></a>
+                </li>
+            </ul>
+            <br> 
+            Estudantes do Campus2 Vila do Conde/Póvoa de Varzim <br> 
+            Projeto 2 - Tecnologia e Sistemas de Informação para a Web <br> 
+            Gonçalo Perdigão, Pedro Ferreira e Francisco Fernandes
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
